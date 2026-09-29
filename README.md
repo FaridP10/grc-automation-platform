@@ -1,6 +1,7 @@
 # GRC Automation Platform
 
 [![Tests](https://github.com/FaridP10/grc-automation-platform/actions/workflows/tests.yml/badge.svg)](https://github.com/FaridP10/grc-automation-platform/actions/workflows/tests.yml)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](pyproject.toml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An integrated platform that automates three manual GRC workflows against a shared
