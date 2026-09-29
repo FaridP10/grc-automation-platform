@@ -1,0 +1,7 @@
+# Maps each required-policy catalog id to its document. Any catalog id left
+# out here is treated as "missing" by the gap analysis.
+policies:
+  information_security_policy: data/fixtures/policies/information_security_policy.md
+  access_control_policy: data/fixtures/policies/access_control_policy.md
+  incident_response_policy: data/fixtures/policies/incident_response_policy.md
+  acceptable_use_policy: data/fixtures/policies/acceptable_use_policy.docx

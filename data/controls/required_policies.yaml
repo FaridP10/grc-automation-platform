@@ -1,0 +1,75 @@
+# Catalog of policy documents commonly required to demonstrate ISO 27001 Annex A
+# coverage, the controls each satisfies, the content expected inside it, and how
+# often it must be reviewed to stay current.
+policies:
+  - id: information_security_policy
+    name: Information Security Policy
+    control_ids: [A.5.1]
+    required_clauses: ["purpose", "scope", "management commitment", "review"]
+    max_review_age_days: 365
+
+  - id: access_control_policy
+    name: Access Control Policy
+    control_ids: [A.5.15, A.8.3]
+    required_clauses: ["least privilege", "access request", "access review"]
+    max_review_age_days: 365
+
+  - id: acceptable_use_policy
+    name: Acceptable Use Policy
+    control_ids: [A.5.10]
+    required_clauses: ["acceptable use", "prohibited use"]
+    max_review_age_days: 365
+
+  - id: incident_response_policy
+    name: Incident Response Policy
+    control_ids: [A.5.24, A.5.26]
+    required_clauses: ["incident classification", "escalation", "notification"]
+    max_review_age_days: 365
+
+  - id: business_continuity_policy
+    name: Business Continuity and Disaster Recovery Policy
+    control_ids: [A.5.29, A.5.30]
+    required_clauses: ["recovery time objective", "recovery point objective", "backup"]
+    max_review_age_days: 365
+
+  - id: supplier_risk_policy
+    name: Supplier and Third-Party Risk Management Policy
+    control_ids: [A.5.19, A.5.20]
+    required_clauses: ["vendor assessment", "due diligence"]
+    max_review_age_days: 365
+
+  - id: data_classification_policy
+    name: Data Classification Policy
+    control_ids: [A.5.12]
+    required_clauses: ["confidential", "public", "internal"]
+    max_review_age_days: 365
+
+  - id: change_management_policy
+    name: Change Management Policy
+    control_ids: [A.8.32]
+    required_clauses: ["change request", "approval", "rollback"]
+    max_review_age_days: 365
+
+  - id: remote_working_policy
+    name: Remote Working and Mobile Device Policy
+    control_ids: [A.6.7, A.8.1]
+    required_clauses: ["vpn", "device encryption"]
+    max_review_age_days: 365
+
+  - id: hr_security_policy
+    name: HR Security Policy
+    control_ids: [A.6.1, A.6.5]
+    required_clauses: ["background check", "termination", "offboarding"]
+    max_review_age_days: 365
+
+  - id: backup_policy
+    name: Backup Policy
+    control_ids: [A.8.13]
+    required_clauses: ["backup frequency", "retention", "restore testing"]
+    max_review_age_days: 365
+
+  - id: vulnerability_management_policy
+    name: Vulnerability Management Policy
+    control_ids: [A.8.8]
+    required_clauses: ["patch", "scanning", "remediation timeline"]
+    max_review_age_days: 365
