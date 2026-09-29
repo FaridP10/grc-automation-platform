@@ -9,8 +9,9 @@ ISO 27001 Annex A control set:
 
 ## Status
 
-Early scaffolding: shared control registry and data models are in place. Module logic
-(remediation, policy, posture, API, dashboard) is in progress.
+Remediation, policy assessment, and posture scanning are implemented and tested,
+tied together in a Streamlit dashboard. No FastAPI layer yet -- everything runs
+via CLI or the dashboard.
 
 ## Stack
 
@@ -37,4 +38,22 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -e ".[dev]"
 pytest
+```
+
+## Usage
+
+```bash
+# Remediation (POA&M)
+python -m grc_platform.remediation.cli ingest data/fixtures/sample_findings.csv
+python -m grc_platform.remediation.cli list --overdue
+python -m grc_platform.remediation.cli status FIND-001 Remediated --notes "Patched"
+
+# Policy assessment
+python -m grc_platform.policy.cli assess data/fixtures/policy_manifest.yaml
+
+# AWS posture scan (moto-mocked demo account, no AWS credentials needed)
+python -m grc_platform.posture.cli scan --to-remediation
+
+# Dashboard tying all three together
+streamlit run src/grc_platform/dashboard/app.py
 ```
