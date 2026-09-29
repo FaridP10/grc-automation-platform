@@ -5,6 +5,7 @@ venv/
 *.egg-info/
 .pytest_cache/
 .coverage
+coverage.json
 htmlcov/
 .DS_Store
 .env
