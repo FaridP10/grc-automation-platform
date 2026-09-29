@@ -1,0 +1,7 @@
+id,title,description,source,control_ids,severity,discovered_date,owner
+FIND-001,S3 bucket allows public read access,Customer data bucket 'prod-uploads' has a public-read bucket policy exposing objects to unauthenticated users.,aws_posture_scan,A.8.3;A.5.15,Critical,2026-09-01,
+FIND-002,MFA not enforced for privileged IAM users,Two IAM users with AdministratorAccess do not have MFA devices attached.,aws_posture_scan,A.8.2;A.8.5,Critical,2026-09-01,
+FIND-003,No documented incident response plan,Gap assessment found no formal incident response plan covering detection triage and post-incident review.,gap_assessment,A.5.24;A.5.26,High,2026-08-15,
+FIND-004,Vendor lacks SOC 2 report,Payment processor vendor could not provide a current SOC 2 Type II report during annual vendor review.,vendor_review,A.5.19;A.5.20,Medium,2026-08-20,
+FIND-005,CloudTrail logging disabled in one region,CloudTrail is not enabled in ca-central-1 leaving API activity in that region unlogged.,aws_posture_scan,A.8.15;A.8.16,High,2026-09-05,
+FIND-006,Offboarding checklist missing access revocation step,Review found terminated employees retained VPN access for up to five days past termination.,gap_assessment,A.6.5;A.5.18,Medium,2026-08-10,

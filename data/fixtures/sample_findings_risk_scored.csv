@@ -1,0 +1,3 @@
+id,title,description,source,control_ids,likelihood,impact,discovered_date,owner
+FIND-101,Legacy TLS 1.0 still enabled on load balancer,Load balancer accepts TLS 1.0/1.1 connections in addition to 1.2+.,aws_posture_scan,A.8.24,4,4,2026-09-10,
+FIND-102,Clear desk policy not observed in shared office,Physical walkthrough found sensitive printouts left on desks overnight.,gap_assessment,A.7.7,2,2,2026-08-25,
