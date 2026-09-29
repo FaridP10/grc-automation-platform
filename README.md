@@ -5,6 +5,7 @@
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](pyproject.toml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Contributors](https://img.shields.io/github/contributors/FaridP10/grc-automation-platform.svg)](https://github.com/FaridP10/grc-automation-platform/graphs/contributors)
+[![Open Issues](https://img.shields.io/github/issues/FaridP10/grc-automation-platform.svg)](https://github.com/FaridP10/grc-automation-platform/issues)
 
 An integrated platform that automates three manual GRC workflows against a shared
 ISO 27001 Annex A control set:
