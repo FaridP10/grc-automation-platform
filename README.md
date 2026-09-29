@@ -1,5 +1,7 @@
 # GRC Automation Platform
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 An integrated platform that automates three manual GRC workflows against a shared
 ISO 27001 Annex A control set:
 
